@@ -1,0 +1,279 @@
+[{
+      "sigla": "BGO",
+      "nome": "Bengo",
+      "cidades": [
+        "Ambriz",
+        "Dande",
+        "Dembos",
+        "Bula Atumba",
+        "Nambuangongo",
+        "Pango Aluquém"
+      ]
+    },
+    {
+      "sigla": "BGU",
+      "nome": "Benguela",
+      "cidades": [
+        "Balombo",
+        "Baía Farta",
+        "Benguela",
+        "Bocoio",
+        "Caimbambo",
+        "Catumbela",
+        "Chongoroi",
+        "Cubal",
+        "Ganda",
+        "Lobito"
+      ]
+    },
+    {
+      "sigla": "BIE",
+      "nome": "Bié",
+      "cidades": [
+        "Andulo",
+        "Camacupa",
+        "Catabola",
+        "Chinguar",
+        "Chitembo",
+        "Cuemba",
+        "Cunhinga",
+        "Kuito",
+        "Nharea"
+      ]
+    },
+    {
+      "sigla": "CAB",
+      "nome": "Cabinda",
+      "cidades": [
+        "Belize",
+        "Buco-Zau",
+        "Cabinda",
+        "Cacongo"
+      ]
+    },
+    {
+      "sigla": "CNN",
+      "nome": "Cunene",
+      "cidades": [
+        "Cahama",
+        "Cuanhama",
+        "Curoca",
+        "Cuvelai",
+        "Namacunde",
+        "Ombadja"
+      ]
+    },
+    {
+      "sigla": "HUA",
+      "nome": "Huambo",
+      "cidades": [
+        "Bailundo",
+        "Catchiungo",
+        "Caála",
+        "Ekunha",
+        "Huambo",
+        "Londuimbale",
+        "Longonjo",
+        "Mungo",
+        "Tchicala-Tcholoanga",
+        "Tchindjenje",
+        "Ucuma"
+      ]
+    },
+    {
+      "sigla": "HUI",
+      "nome": "Huíla",
+      "cidades": [
+        "Caconda",
+        "Cacula",
+        "Caluquembe",
+        "Chiange",
+        "Chibia",
+        "Chicomba",
+        "Chipindo",
+        "Humpata",
+        "Jamba",
+        "Kuvango",
+        "Lubango",
+        "Matala",
+        "Quilengues",
+        "Quipungo"
+      ]
+    },
+    {
+      "sigla": "KUK",
+      "nome": "Kuando Kubango",
+      "cidades": [
+        "Calai",
+        "Cuangar",
+        "Cuchi",
+        "Cuito Cuanavale",
+        "Dirico",
+        "Mavinga",
+        "Menongue",
+        "Nancova",
+        "Rivungo"
+      ]
+    },
+    {
+      "sigla": "KNO",
+      "nome": "Kuanza Norte",
+      "cidades": [
+        "Ambaca",
+        "Banga",
+        "Bolongongo",
+        "Cambambe",
+        "Cazengo",
+        "Golungo Alto",
+        "Gonguembo",
+        "Lucala",
+        "Quiculungo",
+        "Samba Caju"
+      ]
+    },
+    {
+      "sigla": "KUS",
+      "nome": "Kuanza Sul",
+      "cidades": [
+        "Gabela",
+        "Cassongue",
+        "Cela",
+        "Conda",
+        "Ebo",
+        "Libolo",
+        "Mussende",
+        "Porto Amboim",
+        "Quilenda",
+        "Quibala",
+        "Seles",
+        "Sumbe"
+      ]
+    },
+    {
+      "sigla": "LDA",
+      "nome": "Luanda",
+      "cidades": [
+        "Belas",
+        "Cacuaco",
+        "Cazenga",
+        "Icolo e Bengo",
+        "Luanda",
+        "Quiçama",
+        "Kilamba Kiaxi",
+        "Talatona",
+        "Viana"
+      ]
+    },
+    {
+      "sigla": "LNO",
+      "nome": "Lunda Norte",
+      "cidades": [
+        "Cambulo",
+        "Capenda Camulemba",
+        "Caungula",
+        "Chitato ",
+        "Cuango",
+        "Cuilo",
+        "Lóvua",
+        "Lubalo",
+        "Lucapa",
+        "Xá Muteba"
+      ]
+    },
+    {
+      "sigla": "LSU",
+      "nome": "Lunda Sul",
+      "cidades": [
+        "Cacolo",
+        "Dala",
+        "Muconda",
+        "Saurimo"
+      ]
+    },
+    {
+      "sigla": "MAL",
+      "nome": "Malange",
+      "cidades": [
+        "Cacuso",
+        "Calandula",
+        "Cambundi-Catembo",
+        "Cangandala",
+        "Caombo",
+        "Cuaba Nzogo",
+        "Cunda-Dia-Baze",
+        "Luquembo",
+        "Malange",
+        "Marimba",
+        "Massango",
+        "Mucari",
+        "Quela",
+        "Quirima"
+      ]
+    },
+    {
+      "sigla": "MOX",
+      "nome": "Moxico",
+      "cidades": [
+        "Alto Zambeze",
+        "Bundas",
+        "Camanongue",
+        "Cameia",
+        "Luau",
+        "Lucano",
+        "Luchazes",
+        "Léua",
+        "Moxico"
+      ]
+    },
+    {
+      "sigla": "NAM",
+      "nome": "Namibe",
+      "cidades": [
+        "Bibala",
+        "Camulo",
+        "Namibe",
+        "Tômbua",
+        "Virei"
+      ]
+    },
+    {
+      "sigla": "UIG",
+      "nome": "Uíge",
+      "cidades": [
+        "Alto Cauale",
+        "Ambuíla",
+        "Bembe",
+        "Buengas",
+        "Bungo",
+        "Damba",
+        "Macocola",
+        "Mucaba",
+        "Negage",
+        "Puri",
+        "Quimbele",
+        "Quitexe",
+        "Sanza Pombo",
+        "Songo",
+        "Uíge",
+        "Maquela do Zombo"
+      ]
+    },
+    {
+      "sigla": "ZAI",
+      "nome": "Zaire",
+      "cidades": [
+        "Cuimba",
+        "M'Banza Kongo",
+        "Noqui",
+        "N'Zeto",
+        "Soyo",
+        "Tomboco"
+      ]
+},
+{
+  "sigla": "DIA",
+  "nome": "Diáspora",
+  "cidades": [
+    ""
+  ]
+}]
