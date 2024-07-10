@@ -28,49 +28,51 @@
         <div class="container">
             <div class="row ">
                 <div class="col-md-4 d-md-flex">
-                    <div class="text-center logo-box">
-                        <a class="navbar-brand" href="index.html">MINDENACVP</a>
-                        <span class="brand-text">System</span>
+                    <div class="logo-box">
+                        <a class="navbar-brand" href="index.html">MINDENACVP
+                        <span class="brand-text">System</span></a>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 d-md-flex justify-content-end mb-md-0 mb-3"></div> -->
                 <div class="col-md-6 d-md-flex">
                     <form action="#" class="searchform ">
                         <div class="form-group d-flex">
-                            <select class="form-control select" name="" id="">
+                            <select class="form-control select" name="filter" id="" title="Filtro">
                                 <option value="Busca">Busca</option>
                                 <option value="Busca">Opção 2</option>
                                 <option value="Busca">Opção 3</option>
                                 <option value="Busca">Opção 4</option>
                             </select>
                             <input type="text" class="form-control pl-3" placeholder="Pesquise aqui...">
-                            <button type="submit" class="form-control search"><span class="icon"><i
-                                        class="fa-solid fa-magnifying-glass"></i></span></button>
-
+                            <button type="submit" class="form-control search" title="Pesquisar">
+                                <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </button>
                         </div>
                     </form>
                 </div>
                 <div class="col-md-2 notifications-area text-right">
                     <!-- Ordem inversa por causa da propriedade "Float: right"-->
                     <!-- User icon -->
-                    <span class="icon">
-                        <i class="fa-solid fa-user"></i>
+                    <span class="icon user-avatar">
+                        <a href="#" title="Usuário do sistema"><img src="images/anonymous_avatar.jpg" alt=""></a>
                     </span>
                     <!-- Notifications icon -->
                     <span class="icon">
+                        <a href="#" title="Notificações">
                         <span
                             class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             <span class="visually-hidden">100</span>
                         </span>
-                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-bell"></i></a>
                     </span>
                     <!-- Mailbox icon -->
                     <span class="icon position-relative">
+                        <a href="#" title="Caixa de Entrada">
                         <span
                             class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             <span class="visually-hidden">1</span>
                         </span>
                         <i class="fa-regular fa-envelope"></i>
+                        </a>
                     </span>
                 </div>
             </div>
@@ -78,10 +80,15 @@
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
             <div class="container-fluid">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fa fa-bars"></span> Menu
-                </button>
+                <div class="row mobile-menu">
+					<div class="col-6"><strong>MENU</strong></div>
+					<div class="col-6 text-right">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+							aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon"><i class="fa-solid fa-bars"></i></span>
+						</button>
+					</div>
+				</div>
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i
@@ -128,6 +135,7 @@
 
                         <form class="custom-form " action="" method="post" enctype="multipart/form-data">
                             <!-- Dados da Província e Município -->
+                             <!-- Todas as províncias e respectivos municípios estão listados no ficheiro JSON nas pasta js -->
                             <div class="row step-block" data-aos="fade-up" data-aos-delay="100">
                                 <div class="col-12 col-md-6">
                                     <label class="label" for="province">Província <span class="sup">*</span></label>
@@ -136,7 +144,8 @@
                                     </select>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <label class="label" for="municipality">Município <span class="sup">*</span></label>
+                                    <!-- Os municípios serão selecionados em função da Província -->
+                                    <label class="label field-mt" for="municipality">Município <span class="sup">*</span></label>
                                     <select name="municipality" id="municipality" class="form-control radius-5">
                                         <option value="">Selecione o Município</option>
                                     </select>
@@ -147,15 +156,15 @@
                             <div class="row step-block" data-aos="fade-up" data-aos-delay="100">
                                 <div class="col-12 col-md-6">
                                     <label class="label" for="phoneNumber">Telefone Pessoal <span class="sup">*</span></label>
-                                    <div class="input-group mb-3">
+                                    <div class="input-group ">
                                         <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
                                         <input class="form-control radius-5" type="tel" name="phoneNumber" id="phoneNumber"
                                             placeholder="xx xxxx-xxx" required>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <label class="label" for="phoneNumberHouse">Telefone / casa</label>
-                                    <div class="input-group mb-3">
+                                    <label class="label field-mt" for="phoneNumberHouse">Telefone / casa</label>
+                                    <div class="input-group ">
                                         <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
                                         <input class="form-control radius-5" type="tel" name="phoneNumberHouse" id="phoneNumberHouse"
                                         placeholder="xx xxxx-xxx">
@@ -166,16 +175,14 @@
                             <!-- Dados do Email -->
                             <div class="row step-block" data-aos="fade-up" data-aos-delay="100">
                                 <div class="col-12 col-md-6">
-                                    <label class="label" for="email">Endereço de Email <span class="sup">*</span></label>
-                                    <div class="input-group mb-3">
+                                    <label class="label " for="email">Endereço de Email <span class="sup">*</span></label>
+                                    <div class="input-group ">
                                         <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-envelope"></i></span>
                                         <input class="form-control radius-5" type="email" name="email" id="email"
                                         placeholder="email@dominio.com" required>
                                     </div>
                                 </div>
-                            </div>
-
-                            
+                            </div>                            
 
                             <!-- Buttons -->
                             <div class="row step-block" data-aos="fade-up" data-aos-delay="100">
@@ -195,7 +202,7 @@
                         <script id="rendered-js">
                             $(document).ready(function() {
 
-                                $.getJSON('js/province_municipality.json', function(data) {
+                                $.getJSON('js/province_municipality.json', function(data) { // Informar URL absoluto do ficheiro JSON
                                     var items = [];
                                     var options = '<option value="">Escolha a Província</option>';
                                     $.each(data, function(key, val) {
@@ -235,7 +242,7 @@
         </section>
 
     </main>
-	<footer class="footer-section">
+    <footer class="footer-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -243,8 +250,12 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 text-center">
-					<p>MINDENACVP &copy; 2024 todos os direitos reservados - Made by <a href="#">Angohelpp</a></p>
+				<div class="col-12 col-md-6 copyright">
+					<p>MINDENACVP &copy; 2024 todos os direitos reservados</p>
+				</div>
+				<div class="col-12 col-md-1 middle-devider text-center">-</div>
+				<div class="col-12 col-md-5 made-by">
+					<p>Made by <a href="#">Angohelpp</a></p>
 				</div>
 			</div>
 		</div>

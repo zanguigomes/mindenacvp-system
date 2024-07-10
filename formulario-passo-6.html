@@ -25,49 +25,51 @@
         <div class="container">
             <div class="row ">
                 <div class="col-md-4 d-md-flex">
-                    <div class="text-center logo-box">
-                        <a class="navbar-brand" href="index.html">MINDENACVP</a>
-                        <span class="brand-text">System</span>
+                    <div class="logo-box">
+                        <a class="navbar-brand" href="index.html">MINDENACVP
+                        <span class="brand-text">System</span></a>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 d-md-flex justify-content-end mb-md-0 mb-3"></div> -->
                 <div class="col-md-6 d-md-flex">
                     <form action="#" class="searchform ">
                         <div class="form-group d-flex">
-                            <select class="form-control select" name="" id="">
+                            <select class="form-control select" name="filter" id="" title="Filtro">
                                 <option value="Busca">Busca</option>
                                 <option value="Busca">Opção 2</option>
                                 <option value="Busca">Opção 3</option>
                                 <option value="Busca">Opção 4</option>
                             </select>
                             <input type="text" class="form-control pl-3" placeholder="Pesquise aqui...">
-                            <button type="submit" class="form-control search"><span class="icon"><i
-                                        class="fa-solid fa-magnifying-glass"></i></span></button>
-
+                            <button type="submit" class="form-control search" title="Pesquisar">
+                                <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </button>
                         </div>
                     </form>
                 </div>
                 <div class="col-md-2 notifications-area text-right">
                     <!-- Ordem inversa por causa da propriedade "Float: right"-->
                     <!-- User icon -->
-                    <span class="icon">
-                        <i class="fa-solid fa-user"></i>
+                    <span class="icon user-avatar">
+                        <a href="#" title="Usuário do sistema"><img src="images/anonymous_avatar.jpg" alt=""></a>
                     </span>
                     <!-- Notifications icon -->
                     <span class="icon">
+                        <a href="#" title="Notificações">
                         <span
                             class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             <span class="visually-hidden">100</span>
                         </span>
-                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-bell"></i></a>
                     </span>
                     <!-- Mailbox icon -->
                     <span class="icon position-relative">
+                        <a href="#" title="Caixa de Entrada">
                         <span
                             class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             <span class="visually-hidden">1</span>
                         </span>
                         <i class="fa-regular fa-envelope"></i>
+                        </a>
                     </span>
                 </div>
             </div>
@@ -75,10 +77,15 @@
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
             <div class="container-fluid">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fa fa-bars"></span> Menu
-                </button>
+                <div class="row mobile-menu">
+					<div class="col-6"><strong>MENU</strong></div>
+					<div class="col-6 text-right">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+							aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon"><i class="fa-solid fa-bars"></i></span>
+						</button>
+					</div>
+				</div>
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i
@@ -129,7 +136,7 @@
                             <div class="row step-block" data-aos="fade-up" data-aos-delay="100">
 
                                 <!-- Kicongo -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="kicongo" id="kicongo" value="Kicongo">
                                         <label class="form-check-label" for="kicongo">
@@ -139,7 +146,7 @@
                                 </div>
 
                                 <!-- Kimbundo -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="kimbundo" id="kimbundo" value="kimbundo">
                                         <label class="form-check-label" for="kimbundo">
@@ -149,7 +156,7 @@
                                 </div>
 
                                 <!-- Umbundo -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="umbundo" id="umbundo" value="umbundo">
                                         <label class="form-check-label" for="umbundo">
@@ -159,7 +166,7 @@
                                 </div>
 
                                 <!-- Tchokwe -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="tchokwe" id="tchokwe" value="tchokwe">
                                         <label class="form-check-label" for="tchokwe">
@@ -169,7 +176,7 @@
                                 </div>
 
                                 <!-- Nganguela -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="nganguela" id="nganguela" value="nganguela">
                                         <label class="form-check-label" for="nganguela">
@@ -179,7 +186,7 @@
                                 </div>
 
                                 <!-- Kwanyama -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="kwanyama" id="kwanyama" value="kwanyama">
                                         <label class="form-check-label" for="kwanyama">
@@ -187,12 +194,9 @@
                                         </label>
                                       </div>                                              
                                 </div>
-                            </div>
-                            
-                            <div class="row step-block" data-aos="fade-up" data-aos-delay="100">
 
                                 <!-- Nhaneca -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="nhaneca" id="nhaneca" value="nhaneca">
                                         <label class="form-check-label" for="nhaneca">
@@ -202,7 +206,7 @@
                                 </div>
 
                                 <!-- Fiote -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="fiote" id="fiote" value="fiote">
                                         <label class="form-check-label" for="fiote">
@@ -212,7 +216,7 @@
                                 </div>
 
                                 <!-- Inglês -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="ingles" id="ingles" value="ingles">
                                         <label class="form-check-label" for="ingles">
@@ -222,20 +226,40 @@
                                 </div>
 
                                 <!-- Francês -->
-                                <div class="col-6 col-2">  
+                                <div class="col-6 col-md-2">  
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox"  name="frances" id="frances" value="frances">
                                         <label class="form-check-label" for="frances">
                                             Francês
                                         </label>
                                       </div>                                              
-                                </div>                                
+                                </div> 
+                                
+                                <!-- Espanhol -->
+                                <div class="col-6 col-md-2">  
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox"  name="espanhol" id="espanhol" value="espanhol">
+                                        <label class="form-check-label" for="espanhol">
+                                            Espanhol
+                                        </label>
+                                      </div>                                              
+                                </div> 
+
+                                <!-- Russo -->
+                                <div class="col-6 col-md-2">  
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox"  name="russo" id="russo" value="russo">
+                                        <label class="form-check-label" for="russo">
+                                            Russo
+                                        </label>
+                                      </div>                                              
+                                </div> 
                             </div>  
 
                             <div class="row step-block" data-aos="fade-up" data-aos-delay="100">
                                 <div class="col-12">
                                     <label class="label" for="household">Outros idiomas</label>
-                                    <textarea class="form-control" name="household" rows="5"></textarea>
+                                    <textarea class="form-control radius-5" name="household" rows="5"></textarea>
                                 </div>
                             </div> 
 
@@ -270,8 +294,12 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 text-center">
-					<p>MINDENACVP &copy; 2024 todos os direitos reservados - Made by <a href="#">Angohelpp</a></p>
+				<div class="col-12 col-md-6 copyright">
+					<p>MINDENACVP &copy; 2024 todos os direitos reservados</p>
+				</div>
+				<div class="col-12 col-md-1 middle-devider text-center">-</div>
+				<div class="col-12 col-md-5 made-by">
+					<p>Made by <a href="#">Angohelpp</a></p>
 				</div>
 			</div>
 		</div>
