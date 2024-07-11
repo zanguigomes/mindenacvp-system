@@ -24,55 +24,149 @@
 	<section class="ftco-header">
 		<div class="container">
 			<div class="row ">
-                <div class="col-md-4 d-md-flex">
-                    <div class="logo-box">
-                        <a class="navbar-brand" href="index.html">MINDENACVP
-                        <span class="brand-text">System</span></a>
-                    </div>
-                </div>
-                <div class="col-md-6 d-md-flex">
-                    <form action="#" class="searchform ">
-                        <div class="form-group d-flex">
-                            <select class="form-control select" name="filter" id="" title="Filtro">
-                                <option value="Busca">Busca</option>
-                                <option value="Busca">Opção 2</option>
-                                <option value="Busca">Opção 3</option>
-                                <option value="Busca">Opção 4</option>
-                            </select>
-                            <input type="text" class="form-control pl-3" placeholder="Pesquise aqui...">
-                            <button type="submit" class="form-control search" title="Pesquisar">
-                                <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-2 notifications-area text-right">
-                    <!-- Ordem inversa por causa da propriedade "Float: right"-->
-                    <!-- User icon -->
-                    <span class="icon user-avatar">
-                        <a href="#" title="Usuário do sistema"><img src="images/anonymous_avatar.jpg" alt=""></a>
-                    </span>
-                    <!-- Notifications icon -->
-                    <span class="icon">
-                        <a href="#" title="Notificações">
-                        <span
-                            class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            <span class="visually-hidden">100</span>
-                        </span>
-                        <i class="fa-solid fa-bell"></i></a>
-                    </span>
-                    <!-- Mailbox icon -->
-                    <span class="icon ">
-                        <a href="#" title="Caixa de Entrada">
-                        <span
-                            class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            <span class="visually-hidden">1</span>
-                        </span>
-                        <i class="fa-regular fa-envelope"></i>
-                        </a>
-                    </span>
-                </div>
-            </div>
+				<div class="col-md-3 d-md-flex">
+					<div class="logo-box">
+						<a class="navbar-brand" href="index.html">MINDENACVP
+							<span class="brand-text">System</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 d-md-flex">
+					<form action="#" class="searchform ">
+						<div class="form-group d-flex">
+							<select class="form-control select" name="filter" id="" title="Filtro">
+								<option value="Busca">Busca</option>
+								<option value="Busca">Opção 2</option>
+								<option value="Busca">Opção 3</option>
+								<option value="Busca">Opção 4</option>
+							</select>
+							<input type="text" class="form-control pl-3" placeholder="Pesquise aqui...">
+							<button type="submit" class="form-control search" title="Pesquisar">
+								<span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-3 notifications-area text-right">
+					<!-- Ordem inversa por causa da propriedade "Float: right"-->
+					<!-- User icon -->
+					<div class="dropdown nav-icon user-avatar">
+						<a class="btn dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+							aria-expanded="false">
+							<img src="images/anonymous_avatar.jpg" alt="Usuário do sistema">
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right dropdown-user-menu">
+							<a class="dropdown-item text-center" href="#"><strong>Agostinho Miguel Pimentel</strong></a>
+							<div class="dropdown-divider"></div>
+							<div class="dropdown-item">
+								<!--Link para perfil do usuario -->
+								<div class="notification">
+									<a href="#"><small><i class="fa-regular fa-user"></i> Meu Perfil</small></a>
+								</div>
+
+								<!--Link para Dashboard -->
+								<div class="notification">
+									<a href="#"><small><i class="fa-solid fa-gauge-high"></i> Administração</small></a>
+								</div>
+
+								<!--Link para Mensagens -->
+								<div class="notification">
+									<a href="#"><small><i class="fa-regular fa-envelope"></i>
+											Mensagens</small></a>
+								</div>
+
+								<!--Link para Lixeira -->
+								<div class="notification">
+									<a href="#"><small><i class="fa-solid fa-trash-can"></i> Lixeira</small></a>
+								</div>
+							</div>
+							<a class="dropdown-item text-center dropdown-item-footer" href="#"><small><i
+										class="fa-solid fa-arrow-right-from-bracket"></i> <strong>Sair do
+										sistema</strong></small></a>
+						</div>
+					</div>
+
+					<!-- Notifications - Relatórios -->
+					<div class="dropdown nav-icon">
+						<a class="btn dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+							aria-expanded="false">
+							<span
+								class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+								<span class="visually-hidden">100</span>
+							</span>
+							<span class="fa-icon"><i class="fa-solid fa-bell"></i></span>
+						</a>
+
+						<div class="dropdown-menu  dropdown-menu-right">
+							<a class="dropdown-item text-center" href="#"><strong><i class="fa-solid fa-bell"></i>
+									Relatórios</strong></a>
+							<div class="dropdown-divider"></div>
+							<div class="dropdown-item">
+								<!-- Loop de notificações -->
+								<!-- bloco da 1ª Notificação -->
+								<div class="notification">
+									<span>Tipo - Baixa ao assistido</span>
+									<p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+											laudantium voluptates, atque laboriosam consequuntur quas aut. Modi debitis
+											aut, eaque aliquam consequatur repudiandae, mollitia, sit quaerat fuga
+											asperiores nemo nobis?</small>
+									</p>
+									<p><small><a href="#" data-toggle="modal" data-target="#reportModal">Ver mais <i
+													class="fa-solid fa-arrow-right-long"></i></a></small></p>
+								</div>
+
+								<!-- bloco da 2ª Notificação -->
+								<div class="notification">
+									<span>Tipo - Baixa ao assistido</span>
+									<p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+											laudantium voluptates, atque laboriosam consequuntur quas aut. Modi debitis
+											aut, eaque aliquam consequatur repudiandae, mollitia, sit quaerat fuga
+											asperiores nemo nobis?</small>
+									</p>
+									<p><small><a href="#" data-toggle="modal" data-target="#reportModal">Ver mais <i
+													class="fa-solid fa-arrow-right-long"></i></a></small></p>
+								</div>
+							</div>
+							<a class="dropdown-item text-center dropdown-item-footer" href="#"><small>Ver
+									todas</small></a>
+						</div>
+					</div>
+
+					<!-- SMS Notification -->
+					<div class="dropdown nav-icon">
+						<a class="btn dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+							aria-expanded="false">
+							<span
+								class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+								<span class="visually-hidden">1</span>
+							</span>
+							<span class="fa-icon"><i class="fa-regular fa-envelope"></i></span>
+						</a>
+
+						<div class="dropdown-menu  dropdown-menu-right">
+							<a class="dropdown-item text-center" href="#"><i class="fa-regular fa-envelope"></i>
+								<strong>Mensagens</strong></a>
+							<div class="dropdown-divider"></div>
+							<div class="dropdown-item">
+								<div class="notification">
+									<p class="text-center" data-toggle="modal" data-target="#smsModal">Sem mensagens novas</p>
+								</div>
+								<!-- Loop de mensagens  -->
+
+								<!-- <div class="notification">
+									<span>Mensagen</span>
+									<p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus laudantium voluptates, atque laboriosam consequuntur quas aut. Modi debitis aut, eaque aliquam consequatur repudiandae, mollitia, sit quaerat fuga asperiores nemo nobis?</small>
+									</p>
+									<p><small><a href="#">Ver mais <i class="fa-solid fa-arrow-right-long"></i></a></small></p>
+								</div> -->
+
+							</div>
+							<a class="dropdown-item text-center dropdown-item-footer" href="#"><small>Ver
+									mensagens</small></a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<nav class="navbar navbar-expand-lg ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 			<div class="container-fluid">
@@ -85,7 +179,7 @@
 						</button>
 					</div>
 				</div>
-				
+
 				<div class="collapse navbar-collapse" id="ftco-nav">
 					<ul class="navbar-nav m-auto">
 						<li class="nav-item"><a href="formulario-passo-1.html" class="nav-link"><span class="icon"><i
@@ -115,14 +209,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 hero-image" data-aos="fade-up" data-aos-delay="100">
-						<img src="images/hero-image.jpg" alt="Modelo de Cartão de Identidade">
-						<div class="hero-info">
-							<h1>Sistema de Gestão dos Antigos Combatentes e Veteranos da Pátria</h1>
-							<p>Aqui poderia, por exemplo, se colocar um bloco de texto explicativo sobre como os Gestores devem usar o sistema ou outra informação relevante!</p>
-						</div>
+						<figure>
+							<img src="images/hero-image.jpg" alt="Modelo de Cartão de Identidade">
+							<figcaption class="hero-info text-center">
+								<h1>Sistema de Gestão dos Antigos Combatentes e Veteranos da Pátria</h1>
+								<p>Aqui poderia, por exemplo, se colocar um bloco de texto explicativo sobre como os
+									Gestores devem usar o sistema ou outra informação relevante!</p>
+							</figcaption>
+						</figure>
 					</div>
-				</div>				
-			</div>			
+				</div>
+			</div>
 		</section>
 		<section class="system-report">
 			<div class="container">
@@ -131,7 +228,8 @@
 						<div class="card counter-thumb">
 							<div class="card-body text-center">
 								<span class="icon"><i class="fa-solid fa-user-group"></i></span>
-								<h5 class="card-title counter-number" data-from="1" data-to="66116" data-speed="1000"></h5>
+								<h5 class="card-title counter-number" data-from="1" data-to="66116" data-speed="1000">
+								</h5>
 								<!-- alterar o valor do "data-to" com dados vindos do banco de dados -->
 								<p class="card-text">Assistidos Activos</p>
 							</div>
@@ -151,7 +249,8 @@
 						<div class="card counter-thumb border-left">
 							<div class="card-body text-center">
 								<span class="icon"><i class="fa-regular fa-address-card"></i></span>
-								<h5 class="card-title counter-number" data-from="1" data-to="156" data-speed="1000"></h5>
+								<h5 class="card-title counter-number" data-from="1" data-to="156" data-speed="1000">
+								</h5>
 								<!-- alterar o valor do "data-to" com dados vindos do banco de dados -->
 								<p class="card-text">Número de Catões impressos</p>
 							</div>
@@ -161,7 +260,8 @@
 						<div class="card counter-thumb border-left">
 							<div class="card-body text-center">
 								<span class="icon"><i class="fa-solid fa-user-slash"></i></span>
-								<h5 class="card-title counter-number" data-from="1" data-to="280" data-speed="1000"></h5>
+								<h5 class="card-title counter-number" data-from="1" data-to="280" data-speed="1000">
+								</h5>
 								<!-- alterar o valor do "data-to" com dados vindos do banco de dados -->
 								<p class="card-text">Assistidos Descontinuados</p>
 							</div>
@@ -189,6 +289,53 @@
 			</div>
 		</div>
 	</footer>
+
+<!-- Popup a ser exibido ao clicar em uma notificação de Relatório -->
+	<!-- Modal -->
+	<div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="reportModalLabel"><i class="fa-regular fa-envelope"></i> Tipo de Relatório - Baixa ao Assistido</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h3>Mais detalhes:</h3>
+					<p>O sistema acaba de detectar o registo da Baixa do assistido(a) que em vida se chamou Victor António, da categoria de Antigo Combatente, número de ID UIG0065101, motivo da baixa Morte, data do boletim sem boletim, descrição: DEPARTAMENTO DE ASSISTÊNCIA E REITEGRAÇÃO SOCIO-ECONOMICA NO UIGE AOS 21 DE MARÇO DE 2024, GABINETE PROVINCIAL DOS ANTIGOS COMBATENTES E VETERANOS DA PATRIA NO UIGE AOS 27 DE MARÇO DE 2024</p>
+					<p>Baixa realizada por Junis Garcia</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+					<button type="button" class="btn btn-success">Imprimir</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Popup a ser exibido ao clicar em uma notificação de SMS -->
+	<!-- Modal -->
+	<div class="modal fade" id="smsModal" tabindex="-1" aria-labelledby="smsModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="smsModalLabel"><i class="fa-regular fa-envelope"></i> Título da Mensagen</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h3>Deatalhes da mensagem</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit veritatis unde, quibusdam nostrum aliquam nulla omnis debitis quae facilis? Animi amet enim voluptatem quasi deleniti corrupti deserunt vel cumque dolor?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+					<button type="button" class="btn btn-success">Imprimir</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- END Main Content Area -->
 
 	<script src="js/jquery.min.js"></script>
