@@ -97,6 +97,16 @@ h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
     position: relative;
     opacity: 1 !important;
 }
+@media (width: 1024px){
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        font-size: .8rem;
+    }
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link .icon{
+        display: none;
+    }
+}
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link .icon {
     color: var(--gray);
 }
@@ -356,8 +366,7 @@ h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
         padding: 5px;
         top: 10px;
         color: var(--white);
-    }
-    
+    }    
 }
 /*-----------------------------------------*/
 /*              Modal  / Popup             */
