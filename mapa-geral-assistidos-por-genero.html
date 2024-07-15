@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <title>Seja bem vindo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Teko:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mindenacvp-theme.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+
+<body>
+    <section class="ftco-header">
+        <div class="container">
+            <div class="row ">
+				<div class="col-md-4 col-lg-3 d-md-flex">
+					<div class="logo-box">
+						<a class="navbar-brand" href="index.html">MINDENACVP
+							<span class="brand-text">System</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 d-md-flex">
+					<form action="#" class="searchform ">
+						<div class="form-group d-flex">
+							<select class="form-control select" name="filter" id="" title="Filtro">
+								<option value="Busca">Busca</option>
+								<option value="Busca">Opção 2</option>
+								<option value="Busca">Opção 3</option>
+								<option value="Busca">Opção 4</option>
+							</select>
+							<input type="text" class="form-control pl-3" placeholder="Pesquise aqui...">
+							<button type="submit" class="form-control search" title="Pesquisar">
+								<span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-2 col-lg-3 notifications-area text-right">
+					<!-- Ordem inversa por causa da propriedade "Float: right"-->
+					<!-- User icon -->
+					<div class="dropdown nav-icon user-avatar">
+						<a class="btn dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+							aria-expanded="false">
+							<img src="images/anonymous_avatar.jpg" alt="Usuário do sistema">
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right dropdown-user-menu">
+							<a class="dropdown-item text-center" href="#"><strong>Agostinho Miguel Pimentel</strong></a>
+							<div class="dropdown-divider"></div>
+							<div class="dropdown-item">
+								<!--Link para perfil do usuario -->
+								<div class="notification">
+									<a href="#"><small><i class="fa-regular fa-user"></i> Meu Perfil</small></a>
+								</div>
+
+								<!--Link para Dashboard -->
+								<div class="notification">
+									<a href="#"><small><i class="fa-solid fa-gauge-high"></i> Administração</small></a>
+								</div>
+
+								<!--Link para Mensagens -->
+								<div class="notification">
+									<a href="#"><small><i class="fa-regular fa-envelope"></i>
+											Mensagens</small></a>
+								</div>
+
+								<!--Link para Lixeira -->
+								<div class="notification">
+									<a href="#"><small><i class="fa-solid fa-trash-can"></i> Lixeira</small></a>
+								</div>
+							</div>
+							<a class="dropdown-item text-center dropdown-item-footer" href="#"><small><i
+										class="fa-solid fa-arrow-right-from-bracket"></i> <strong>Sair do
+										sistema</strong></small></a>
+						</div>
+					</div>
+
+					<!-- Notifications - Relatórios -->
+					<div class="dropdown nav-icon">
+						<a class="btn dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+							aria-expanded="false">
+							<span
+								class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+								<span class="visually-hidden">100</span>
+							</span>
+							<span class="fa-icon"><i class="fa-solid fa-bell"></i></span>
+						</a>
+
+						<div class="dropdown-menu  dropdown-menu-right">
+							<a class="dropdown-item text-center" href="#"><strong><i class="fa-solid fa-bell"></i>
+									Relatórios</strong></a>
+							<div class="dropdown-divider"></div>
+							<div class="dropdown-item">
+								<!-- Loop de notificações -->
+								<!-- bloco da 1ª Notificação -->
+								<div class="notification">
+									<span>Tipo - Baixa ao assistido</span>
+									<p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+											laudantium voluptates, atque laboriosam consequuntur quas aut. Modi debitis
+											aut, eaque aliquam consequatur repudiandae, mollitia, sit quaerat fuga
+											asperiores nemo nobis?</small>
+									</p>
+									<p><small><a href="#" data-toggle="modal" data-target="#reportModal">Ver mais <i
+													class="fa-solid fa-arrow-right-long"></i></a></small></p>
+								</div>
+
+								<!-- bloco da 2ª Notificação -->
+								<div class="notification">
+									<span>Tipo - Baixa ao assistido</span>
+									<p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+											laudantium voluptates, atque laboriosam consequuntur quas aut. Modi debitis
+											aut, eaque aliquam consequatur repudiandae, mollitia, sit quaerat fuga
+											asperiores nemo nobis?</small>
+									</p>
+									<p><small><a href="#" data-toggle="modal" data-target="#reportModal">Ver mais <i
+													class="fa-solid fa-arrow-right-long"></i></a></small></p>
+								</div>
+							</div>
+							<a class="dropdown-item text-center dropdown-item-footer" href="#"><small>Ver
+									todas</small></a>
+						</div>
+					</div>
+
+					<!-- SMS Notification -->
+					<div class="dropdown nav-icon">
+						<a class="btn dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+							aria-expanded="false">
+							<span
+								class="pill position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+								<span class="visually-hidden">1</span>
+							</span>
+							<span class="fa-icon"><i class="fa-regular fa-envelope"></i></span>
+						</a>
+
+						<div class="dropdown-menu  dropdown-menu-right">
+							<a class="dropdown-item text-center" href="#"><i class="fa-regular fa-envelope"></i>
+								<strong>Mensagens</strong></a>
+							<div class="dropdown-divider"></div>
+							<div class="dropdown-item">
+								<div class="notification">
+									<p class="text-center" data-toggle="modal" data-target="#smsModal">Sem mensagens novas</p>
+								</div>
+								<!-- Loop de mensagens  -->
+
+								<!-- <div class="notification">
+									<span>Mensagen</span>
+									<p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus laudantium voluptates, atque laboriosam consequuntur quas aut. Modi debitis aut, eaque aliquam consequatur repudiandae, mollitia, sit quaerat fuga asperiores nemo nobis?</small>
+									</p>
+									<p><small><a href="#">Ver mais <i class="fa-solid fa-arrow-right-long"></i></a></small></p>
+								</div> -->
+
+							</div>
+							<a class="dropdown-item text-center dropdown-item-footer" href="#"><small>Ver
+									mensagens</small></a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <nav class="navbar navbar-expand-lg ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container-fluid">
+
+                <div class="row mobile-menu">
+                    <div class="col-6"><strong>MENU</strong></div>
+                    <div class="col-6 text-right">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon"><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item"><a href="formulario-passo-1.html" class="nav-link"><span class="icon"><i
+                                        class="fa-regular fa-clipboard"></i></span> Recenseamento</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i
+                                        class="fa-solid fa-clipboard-list"></i> </span>Controlo e Gerenciamento</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i
+                                        class="fa-regular fa-file-lines"></i></span> Emissão de Documentos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i
+                                        class="fa-solid fa-chart-line"></i></span> Relatórios</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i
+                                        class="fa-solid fa-user-tie"></i></span> Prova de Vida</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i
+                                        class="fa-solid fa-arrow-up-wide-short"></i></span> Filtros</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><span class="icon"><i
+                                        class="fa-solid fa-info"></i></span> Informacções</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END nav -->
+
+    </section>
+
+    <!-- Main Content Area -->
+    <main>
+        <section class="forms-section general-map-table">
+            <header class="">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Assistidos activos</h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container-fluid px-md-5 table-container" data-aos="fade-up">
+                <div class="row justify-content-center form-steps">
+                    <div class="col-12">
+                        <h3 data-aos="fade-up" data-aos-delay="100"><strong>Mapa geral dos Assistidos activos por Gênero</strong></h3>
+                    </div>
+                                       
+                    <div class="col-12">                    
+                        <table class="table table-hover table-responsive table-bordered">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col col-md-2">Nacional</th>
+                                    <th scope="col col-md-1">Antigo Combatente</th>
+                                    <th scope="col col-md-1">DF I-GP</th>
+                                    <th scope="col col-md-1">DF II-GP</th>
+                                    <th scope="col col-md-1">DF III-GP</th>
+                                    <th scope="col col-md-1">DF IV-GP</th>
+                                    <th scope="col col-md-1">Órfão de Combatente</th>
+                                    <th scope="col col-md-1">Viúva de Combatente</th>
+                                    <th scope="col col-md-2">Descendente de Combatente</th>
+                                    <th scope="col col-md-1">Total</th>
+                                </tr>
+                            </thead>
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col col-md-2">Províncias</th>
+                                    <th scope="col col-md-1"><div class="gender-M text-left">M</div><div class="gender-F text-right">F</div></th>
+                                    <th scope="col col-md-1"><div class="gender-M text-left">M</div><div class="gender-F text-right">F</div></th>
+                                    <th scope="col col-md-1"><div class="gender-M text-left">M</div><div class="gender-F text-right">F</div></th>
+                                    <th scope="col col-md-1"><div class="gender-M text-left">M</div><div class="gender-F text-right">F</div></th>
+                                    <th scope="col col-md-1"><div class="gender-M text-left">M</div><div class="gender-F text-right">F</div></th>
+                                    <th scope="col col-md-1"><div class="gender-M text-left">M</div><div class="gender-F text-right">F</div></th>
+                                    <th scope="col col-md-1"><div class="gender-M text-left">M</div><div class="gender-F text-right">F</div></th>
+                                    <th scope="col col-md-1"><div class="gender-M text-left">M</div><div class="gender-F text-right">F</div></th>
+                                    <th scope="col col-md-1"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Bengo</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4982</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Benguela</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4012</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bié</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>2768</strong></a></td>
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row">Cabinda</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4982</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cuando Cubango</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4012</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cuanza Norte</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>2768</strong></a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Cuanza Sul</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4982</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cunene</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4012</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Huambo</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>2768</strong></a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Huíla</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4982</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Luanda</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4012</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Lunda Norte</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>2768</strong></a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Lunda Sul</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4982</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Malange</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4012</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Moxico</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>2768</strong></a></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Namibe</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4982</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Uíge</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>4012</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Zaire</th>
+                                    <td class="text-center">                                        
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">8</a></div>
+                                        <div class="gender-F text-right"><a href="#">6</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1</a></div>
+                                        <div class="gender-F text-right"><a href="#">2</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">3</a></div>
+                                        <div class="gender-F text-right"><a href="#">22</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">77</a></div>
+                                        <div class="gender-F text-right"><a href="#">3</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">15</a></div>
+                                        <div class="gender-F text-right"><a href="#">5</a></div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="gender-M text-left"><a href="#">1577</a></div>
+                                        <div class="gender-F text-right"><a href="#">3225</a></div>
+                                    </td>
+                                    <td class="text-center"><a href="#"><strong>2768</strong></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <hr class="line-devider">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 copyright">
+                    <p>MINDENACVP &copy; 2024 todos os direitos reservados</p>
+                </div>
+                <div class="col-12 col-md-1 middle-devider text-center">-</div>
+                <div class="col-12 col-md-5 made-by">
+                    <p>Made by <a href="#">Angohelpp</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup a ser exibido ao clicar em uma notificação de Relatório -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tipo de Relatório - Baixa ao Assistido</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Mais detalhes:</h3>
+                    <p>O sistema acaba de detectar o registo da Baixa do assistido(a) que em vida se chamou Victor
+                        António, da categoria de Antigo Combatente, número de ID UIG0065101, motivo da baixa Morte, data
+                        do boletim sem boletim, descrição: DEPARTAMENTO DE ASSISTÊNCIA E REITEGRAÇÃO SOCIO-ECONOMICA NO
+                        UIGE AOS 21 DE MARÇO DE 2024, GABINETE PROVINCIAL DOS ANTIGOS COMBATENTES E VETERANOS DA PATRIA
+                        NO UIGE AOS 27 DE MARÇO DE 2024</p>
+                    <p>Baixa realizada por Junis Garcia</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                    <button type="button" class="btn btn-success">Imprimir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Main Content Area -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/main.js"></script>
+    <script src="fonts/fontawesome/js/all.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        $(document).ready(function () {
+            window.addEventListener('load', () => {
+                AOS.init({
+                    duration: 1000,
+                    easing: 'ease-in-out',
+                    once: true,
+                    mirror: false
+                })
+            });
+        })
+    </script>
+
+</body>
+
+</html>

@@ -416,17 +416,23 @@ h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
     -o-border-radius: 0 0 30px 30px;
     border-radius: 0 0 30px 30px;
 }
+.hero-content figure {
+    text-align: center;
+    padding-top: 30px;
+}
 .hero-content figure img {
-    width: 100%;
+    width: 58%;
+    margin: 0 auto;
 }
 .hero-content figcaption.hero-info {
-    padding: 30px 120px;
+    padding: 10px 120px;
 }
 .hero-content figcaption.hero-info h1 {
+    font-size: 2.4rem;
     font-weight: bolder;
-    line-height: 50px;
+    line-height: 45px;
     padding: 0;
-    margin: 0;
+    margin: 0 0 30px 0 !important;
 }
 
 @media (width: 1024px) {    
@@ -456,11 +462,12 @@ h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
 /*-----------------------------------------*/
 .system-report {
     margin-top: -100px;
-    padding: 160px 0 60px 0;
+    padding: 130px 0 30px 0;
     background: var(--white);
 }
 .system-report .card {
     padding: 0 !important;
+    margin: 0 !important;
     background: transparent !important;
     border: 0 !important;
     -webkit-border-radius: 0 !important;
@@ -478,10 +485,12 @@ h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
 .system-report .card .card-text {
     font-size: 0.9rem;
     line-height: 20px;
+    margin: 0 !important;
 }
 .system-report .icon {
     font-size: 1.5rem;
     color: var(--warning);
+    margin: 0 !important;
 }
 @media (max-width: 425px) {    
     .system-report .border-left {
@@ -640,6 +649,11 @@ section.quick-access .access-box h3 {
 }
 .forms-section .input-group-text-alt {
     width: auto !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 .forms-section .input-group-text-alt label {
     margin-top: 10px;
@@ -705,6 +719,25 @@ section.quick-access .access-box h3 {
 .general-map-table .table thead th {
     width: 1% !important;
 }
+
+.general-map-table .table .avatar-large{
+    display: none;
+    position: absolute;
+}
+.general-map-table .table figure.avatar-img img:hover{
+    cursor: pointer;
+}
+.general-map-table .table figure.avatar-img:hover .avatar-large{
+    display: block !important;
+    left: 25%;
+    top: -20%;
+    z-index: 9 !important;
+    width: 300px !important;
+}
+.general-map-table .table .avatar-large img{ 
+    width: 500px;   
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5) !important;
+}
 .general-map-table .table img.avatar {
     width: 50px !important;
     -webkit-border-radius: 100%;
@@ -713,6 +746,7 @@ section.quick-access .access-box h3 {
     -o-border-radius: 100%;
     border-radius: 100%;
 }
+
 .general-map-table .avatar-name{
     display: block;
     width: 500px !important;
@@ -734,7 +768,7 @@ section.quick-access .access-box h3 {
 }
 .general-map-table table thead{
     text-transform: uppercase;
-    font-size: .6rem;
+    font-size: .8rem;
     text-align: center;
     vertical-align: middle;
 }
@@ -781,6 +815,13 @@ section.quick-access .access-box h3 {
     right: 0;
     top: 2px;
 }
+.general-map-table .table .gender-M,
+.general-map-table .table .gender-F{
+    width: 50% !important;
+    float: left;
+    padding: 0;
+}
+
 .general-map-table .radius-off{
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
@@ -834,6 +875,9 @@ section.quick-access .access-box h3 {
         height: 40px !important;
         margin-top: 9px;
     }
+    .general-map-table .table figure.avatar-img:hover .avatar-large{
+        left: 2% !important;
+    }
     .general-map-table .pagination-section{
         margin-top: -30px !important;
     }
@@ -847,6 +891,7 @@ section.quick-access .access-box h3 {
     color: var(--gray);
     font-size: 0.8rem;
     padding: 0 !important;
+    z-index: 1 !important;
 }
 .footer-section a {
     color: var(--warning);

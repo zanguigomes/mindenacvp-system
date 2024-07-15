@@ -245,6 +245,7 @@
                                     <option value="uige">Uíge</option>
                                     <option value="zaire">Zaire</option>
                                 </select>
+
                                 <select class="form-select select-field form-control radius-5 radius-off"
                                     aria-label="Large select example">
                                     <option selected>selecione o Grupo</option>
@@ -252,9 +253,10 @@
                                     <option value="">Deficiente de Guerra - Grupo II</option>
                                     <option value="">Outro</option>
                                 </select>
+
                                 <div class="input-group group-search radius-off">
                                     <span class="input-group-text radius-off" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                                    <input class="form-control radius-5 radius-off" type="text" name="filter" placeholder="Filtrar lista apresentada...">
+                                    <input class="form-control radius-off" type="text" name="filter" placeholder="Filtrar lista apresentada...">
                                 </div>
                                 
                                 <button type="submit" class="btn btn-warning radius-lft-off"><i
@@ -282,7 +284,29 @@
                             <tbody>
                                 <!-- Looop -->
                                 <tr>
-                                    <td class="text-center"><img src="images/anonymous_avatar.jpg" class="avatar" alt="Usuário do sistema"></td>
+                                    <td class="text-center">
+                                        <!-- 
+                                            NESTA OPÇÃO: USAR DUAS IMAGENS, 1ª COM DIMENSÃO MENOR (100X100) E A 2ª COM UM TAMANHO MAIOR, QUE SERÁ EXIBIDO AO PASSAR O MOUSE SOBRE A IMAGEM PENOR // 
+
+                                            <figure class="avatar-img"> 
+                                                <img src="images/veterano-thumbnail-1.jpg" class="avatar" alt="Usuário do sistema">
+                                                <figcaption class="avatar-large">
+                                                        <img src="images/veterano-1.jpg" class="large-image" alt="adventure" >
+                                                </figcaption>
+                                            </figure>
+                                        -->
+
+                                        <figure class="avatar-img">                                     
+                                            <!-- OPÇÃO IMPLEMENTADA //
+                                            
+                                             usar apenas uma imagem e estilizá-lo com CSS: a imagem será reduzida para 100px (para a thumbnai) e a mesma imagem, a que será exibita ao passar o mouse terá um tamanho maior (600px)-->
+                                            <img src="images/veterano-1.jpg" class="avatar" alt="Usuário do sistema">
+                                            <figcaption class="avatar-large">
+                                                    <img src="images/veterano-1.jpg" class="large-image" alt="adventure" >
+                                            </figcaption>
+
+                                        </figure>
+                                    </td>
                                     <td class="avatar-name">
                                         <h6>Alberto Kuyounyuni</h6>
                                         <p>Idade: 79 anos</p>
@@ -310,7 +334,14 @@
                                 <!-- ENDLooop -->
 
                                 <tr>
-                                    <td class="text-center"><img src="images/anonymous_avatar.jpg" class="avatar" alt="Usuário do sistema"></td>
+                                    <td class="text-center">
+                                        <figure class="avatar-img">
+                                        <img src="images/veterano-2.jpg" class="avatar" alt="Usuário do sistema">
+                                            <figcaption class="avatar-large">
+                                                    <img src="images/veterano-2.jpg" class="large-image" alt="adventure" >
+                                            </figcaption>
+                                        </figure>                                 
+                                    </td>
                                     <td class="avatar-name">
                                         <h6>André M. Kandjungo Ndawedapo</h6>
                                         <p>Idade: 57 anos</p>
@@ -336,7 +367,14 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center"><img src="images/anonymous_avatar.jpg" class="avatar" alt="Usuário do sistema"></td>
+                                    <td class="text-center">
+                                        <figure class="avatar-img">
+                                        <img src="images/veterano-3.jpg" class="avatar" alt="Usuário do sistema">
+                                            <figcaption class="avatar-large">
+                                                    <img src="images/veterano-3.jpg" class="large-image" alt="adventure" >
+                                            </figcaption>
+                                        </figure>
+                                    </td>
                                     <td class="avatar-name">
                                         <h6>Avelino Ndepedina</h6>
                                         <p>Idade: 56 anos</p>
